@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h2>Wanna See Some Anagrams?!</h2>
+
+
+  <form  action="/" method="post">
+    <input type="text" name="user_word" placeholder="enter word here">
+    <input type="submit" value="Get Yo Anagram!">
+  </form>
+
+  <ul class="anagrams"> 
+  <% @anagrams.each do |word| %>
+  <li><%= word %></li>
+  <%  end  %>
+  </ul>
+
+
+
+</div>
+
