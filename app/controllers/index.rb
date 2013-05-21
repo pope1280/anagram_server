@@ -11,7 +11,7 @@ post '/' do
   @anagram_objects.each do |word|
     @anagrams << word.word
   end
-    
+
   p @anagrams
   erb :index#, :layout => false   #disables layout rendering (this is a partial)
 end  

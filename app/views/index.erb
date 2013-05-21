@@ -9,9 +9,11 @@
   </form>
 
   <ul class="anagrams"> 
+  <% if @anagrams %>
   <% @anagrams.each do |word| %>
   <li><%= word %></li>
-  <%  end  %>
+  <% end %>
+  <% end %> 
   </ul>
 
 
